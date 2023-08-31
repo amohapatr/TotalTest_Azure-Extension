@@ -1,0 +1,13 @@
+.github
+
+#Ignore following folders as they contain node dependencies files
+node_modules
+
+#Ignore config files
+**/tsconfig.json
+
+#Ignore backup files
+**/*.bak
+
+#Ignore system formated files
+**/*.project
