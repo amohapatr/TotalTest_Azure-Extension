@@ -1,0 +1,74 @@
+{
+    "manifestVersion": 1,
+    "id": "BMCAutoRun",
+    "publisher": "BMC",
+    "version": "23.5.2",
+    "name": "BMC AMI DevX Total Test Auto Run",
+    "description": "This Extension is used for testing scenarios in Azure DevOps",
+    "public": true,
+    "categories": [
+	"Azure Pipelines"
+	],
+	"icons": {
+		"default": "images/TotalTest-icon.png"
+	},
+    "targets": [
+        {
+            "id": "Microsoft.VisualStudio.Services"
+        }
+    ],
+	 "links": {
+      "support": {
+          "uri": "https://support.bmc.com"     
+      },
+      "license":{
+          "uri":"https://github.com/amohapatr/BMC-TTT-AutoRun/blob/main/LICENSE.txt"
+      }
+
+  },
+  "content": {
+      "details": {
+          "path": "README.md"
+      },
+  "license": {
+          "path": "LICENSE.txt"
+      }
+  
+  },
+ "tags": [
+      "BMC",
+	  "CICD",
+      "Mainframe",
+      "MF Program Testing",
+      "Total Test",
+      "Utility Task"
+  ],
+  "files": [
+        {
+            "path": "testpipeline"
+        },
+        {
+            "path": "images",
+            "addressable": true
+        }
+    ],
+    "contributions": [
+        {
+            "id": "custom-build-release-task",
+            "type": "ms.vss-distributed-task.task",
+            "targets": [
+                "ms.vss-distributed-task.tasks"
+            ],
+            "properties": {
+                "name": "testpipeline"
+            }
+        }
+    ],
+    "scopes": [],
+    "contributionTypes": [],
+    "files": [
+        {
+            "path": "testpipeline"
+		}          
+    ]
+}
